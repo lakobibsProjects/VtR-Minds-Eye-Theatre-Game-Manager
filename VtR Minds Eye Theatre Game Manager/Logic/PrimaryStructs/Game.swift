@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Game: Codable {
+struct Game: Codable{
     var id: UUID
     var name:String
+    var members: [Account]
 }

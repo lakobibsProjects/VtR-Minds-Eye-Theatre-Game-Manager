@@ -8,8 +8,15 @@
 
 import UIKit
 
-class AuthViewController: UIViewController {
+protocol AuthViewProtocol: AnyObject{
+    
+}
+
+class AuthViewController: UIViewController, AuthViewProtocol {    
     weak var coordinator: MainCoordinator?
+    
+    var presenter: AuthPresenterProtocol!
+    let configurator: AuthConfiguratorProtocol = AuthConfigurator()
     
     var authContentView: UIView!
     var loginTextView: UITextView!
@@ -18,7 +25,9 @@ class AuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configurator.configure(with: self)
+        presenter.configureView()
+        
         setup()
     }
     
@@ -41,22 +50,18 @@ class AuthViewController: UIViewController {
         passwordTextView =  UITextView()
         passwordTextView.textContentType = .password
         authButton =  UIButton()
-        authButton.setTitle("Autorization", for: .normal)
+        authButton.setTitle("Log in", for: .normal)
         authButton.backgroundColor = AppColor.buttonGray
         authButton.addTarget(self, action: #selector(onAuthButtonPressed), for: .touchUpInside)
     }
 
     //MARK: - Assistant Functions
-    private func autorization(login: String, password: String) -> Bool{
-        //logic of autorization
-        return true
-    }
+
     
     //MARK: - Event Handlers
     @objc private func onAuthButtonPressed(){
-        if autorization(login: loginTextView.text, password: passwordTextView.text){
-            coordinator?.accountManager(isAutorized: true)
-        }
+     
+        presenter.onAuthButtonPressed(login: self.loginTextView.text, password: self.passwordTextView.text)
     }
 }
 

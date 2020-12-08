@@ -9,10 +9,18 @@
 import UIKit
 import SnapKit
 
-class AccountManagerViewController: UIViewController {
+protocol AccountManagerViewProtocol: AnyObject{
+    var games: [Game] { get set }
+}
+
+class AccountManagerViewController: UIViewController, AccountManagerViewProtocol {
     weak var coordinator: MainCoordinator?
     var isAutorized = false
     var games: [Game] = []
+    
+    
+    var presenter: AccountManagerPresenterProtocol!
+    let configurator: AccountManagerConfiguratorProtocol = AccountManagerConfigurator()
     
     var gamesTable: UITableView!
     
@@ -29,6 +37,7 @@ class AccountManagerViewController: UIViewController {
         initViews()
         setupViews()
         setupConstraints()
+        
     }
     
     private func initViews(){
@@ -37,6 +46,12 @@ class AccountManagerViewController: UIViewController {
         gamesTable.dataSource = self
     }
 
+    
+    //MARK: - Assistant methods
+
+    
+    //MARK: - Event handlers
+    
 }
 
 //MARK: -Layout
@@ -54,6 +69,7 @@ extension AccountManagerViewController{
     }
 }
 
+//MARK: - TableViewDeleagte & DataSource
 extension AccountManagerViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return games.count
@@ -61,7 +77,9 @@ extension AccountManagerViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //logic to customize cell
-        return UITableViewCell()
+        let cell = UITableViewCell()
+        
+        return cell
     }
     
     

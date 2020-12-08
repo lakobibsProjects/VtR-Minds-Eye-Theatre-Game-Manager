@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E9BC74AF25651CB7008C6171 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74AE25651CB7008C6171 /* Game.swift */; };
+		E9BC74B1256540D1008C6171 /* AuthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74B0256540D1008C6171 /* AuthConfigurator.swift */; };
+		E9BC74B325654276008C6171 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74B225654276008C6171 /* AuthPresenter.swift */; };
+		E9BC74B525654299008C6171 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74B425654299008C6171 /* AuthRouter.swift */; };
+		E9BC74B925655AA8008C6171 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74B825655AA8008C6171 /* AuthInteractor.swift */; };
+		E9BC74BC25657BAE008C6171 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74BB25657BAE008C6171 /* RequestManager.swift */; };
 		E9C9F1D22563D99400D7B748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9F1D12563D99400D7B748 /* AppDelegate.swift */; };
 		E9C9F1D42563D99400D7B748 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9F1D32563D99400D7B748 /* SceneDelegate.swift */; };
 		E9C9F1D62563D99400D7B748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9F1D52563D99400D7B748 /* ViewController.swift */; };
@@ -20,6 +25,11 @@
 		E9C9F1F9256420AE00D7B748 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9F1F8256420AE00D7B748 /* AppColor.swift */; };
 		E9C9F1FB2564211800D7B748 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9F1FA2564211800D7B748 /* AuthViewController.swift */; };
 		E9C9F1FD2564212500D7B748 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9F1FC2564212500D7B748 /* SettingsViewController.swift */; };
+		E9DA80EF256FC7FC004D9F89 /* AccountManagerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA80EE256FC7FC004D9F89 /* AccountManagerConfigurator.swift */; };
+		E9DA80F1256FC807004D9F89 /* AccountManagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA80F0256FC807004D9F89 /* AccountManagerPresenter.swift */; };
+		E9DA80F3256FC81A004D9F89 /* AccountManagerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA80F2256FC81A004D9F89 /* AccountManagerRouter.swift */; };
+		E9DA80F5256FC827004D9F89 /* AccountManagerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA80F4256FC827004D9F89 /* AccountManagerInteractor.swift */; };
+		E9DA80F7256FCF57004D9F89 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA80F6256FCF57004D9F89 /* Account.swift */; };
 		EB8897E1F45F3749B19C54EC /* Pods_VtR_Minds_Eye_Theatre_Game_Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDBF213B24686A41243414E /* Pods_VtR_Minds_Eye_Theatre_Game_Manager.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +37,11 @@
 		1FDBF213B24686A41243414E /* Pods_VtR_Minds_Eye_Theatre_Game_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VtR_Minds_Eye_Theatre_Game_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC8A5AEAB2F3F47470B24C1 /* Pods-VtR Minds Eye Theatre Game Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtR Minds Eye Theatre Game Manager.release.xcconfig"; path = "Target Support Files/Pods-VtR Minds Eye Theatre Game Manager/Pods-VtR Minds Eye Theatre Game Manager.release.xcconfig"; sourceTree = "<group>"; };
 		E9BC74AE25651CB7008C6171 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E9BC74B0256540D1008C6171 /* AuthConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfigurator.swift; sourceTree = "<group>"; };
+		E9BC74B225654276008C6171 /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		E9BC74B425654299008C6171 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		E9BC74B825655AA8008C6171 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		E9BC74BB25657BAE008C6171 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		E9C9F1CE2563D99400D7B748 /* VtR Minds Eye Theatre Game Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VtR Minds Eye Theatre Game Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C9F1D12563D99400D7B748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C9F1D32563D99400D7B748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +56,11 @@
 		E9C9F1F8256420AE00D7B748 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		E9C9F1FA2564211800D7B748 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		E9C9F1FC2564212500D7B748 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E9DA80EE256FC7FC004D9F89 /* AccountManagerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerConfigurator.swift; sourceTree = "<group>"; };
+		E9DA80F0256FC807004D9F89 /* AccountManagerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerPresenter.swift; sourceTree = "<group>"; };
+		E9DA80F2256FC81A004D9F89 /* AccountManagerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerRouter.swift; sourceTree = "<group>"; };
+		E9DA80F4256FC827004D9F89 /* AccountManagerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerInteractor.swift; sourceTree = "<group>"; };
+		E9DA80F6256FCF57004D9F89 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		FDD1BF5C4027E629F43BA4EF /* Pods-VtR Minds Eye Theatre Game Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtR Minds Eye Theatre Game Manager.debug.xcconfig"; path = "Target Support Files/Pods-VtR Minds Eye Theatre Game Manager/Pods-VtR Minds Eye Theatre Game Manager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,8 +97,17 @@
 			isa = PBXGroup;
 			children = (
 				E9BC74AE25651CB7008C6171 /* Game.swift */,
+				E9DA80F6256FCF57004D9F89 /* Account.swift */,
 			);
 			path = PrimaryStructs;
+			sourceTree = "<group>";
+		};
+		E9BC74BA25657B9E008C6171 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC74BB25657BAE008C6171 /* RequestManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		E9C9F1C52563D99400D7B748 = {
@@ -140,6 +169,7 @@
 		E9C9F1F32564202200D7B748 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				E9BC74BA25657B9E008C6171 /* Network */,
 				E9BC74AD25651C81008C6171 /* PrimaryStructs */,
 				E9C9F202256421AC00D7B748 /* Lokalization */,
 			);
@@ -189,6 +219,10 @@
 			isa = PBXGroup;
 			children = (
 				E9C9F1F12563DE7D00D7B748 /* AccountManagerViewController.swift */,
+				E9DA80EE256FC7FC004D9F89 /* AccountManagerConfigurator.swift */,
+				E9DA80F0256FC807004D9F89 /* AccountManagerPresenter.swift */,
+				E9DA80F2256FC81A004D9F89 /* AccountManagerRouter.swift */,
+				E9DA80F4256FC827004D9F89 /* AccountManagerInteractor.swift */,
 			);
 			path = AccountManager;
 			sourceTree = "<group>";
@@ -197,6 +231,10 @@
 			isa = PBXGroup;
 			children = (
 				E9C9F1FA2564211800D7B748 /* AuthViewController.swift */,
+				E9BC74B0256540D1008C6171 /* AuthConfigurator.swift */,
+				E9BC74B225654276008C6171 /* AuthPresenter.swift */,
+				E9BC74B425654299008C6171 /* AuthRouter.swift */,
+				E9BC74B825655AA8008C6171 /* AuthInteractor.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -350,17 +388,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BC74BC25657BAE008C6171 /* RequestManager.swift in Sources */,
+				E9BC74B525654299008C6171 /* AuthRouter.swift in Sources */,
 				E9C9F1D62563D99400D7B748 /* ViewController.swift in Sources */,
 				E9C9F1F9256420AE00D7B748 /* AppColor.swift in Sources */,
+				E9BC74B1256540D1008C6171 /* AuthConfigurator.swift in Sources */,
 				E9C9F1F02563DE5D00D7B748 /* MainCoordinator.swift in Sources */,
 				E9C9F1FD2564212500D7B748 /* SettingsViewController.swift in Sources */,
 				E9C9F1D22563D99400D7B748 /* AppDelegate.swift in Sources */,
 				E9C9F1EE2563DC4D00D7B748 /* Coordinator.swift in Sources */,
 				E9BC74AF25651CB7008C6171 /* Game.swift in Sources */,
+				E9DA80F1256FC807004D9F89 /* AccountManagerPresenter.swift in Sources */,
 				E9C9F1DC2563D99400D7B748 /* VtR_Minds_Eye_Theatre_Game_Manager.xcdatamodeld in Sources */,
+				E9DA80F5256FC827004D9F89 /* AccountManagerInteractor.swift in Sources */,
+				E9DA80EF256FC7FC004D9F89 /* AccountManagerConfigurator.swift in Sources */,
 				E9C9F1D42563D99400D7B748 /* SceneDelegate.swift in Sources */,
+				E9BC74B925655AA8008C6171 /* AuthInteractor.swift in Sources */,
+				E9DA80F7256FCF57004D9F89 /* Account.swift in Sources */,
 				E9C9F1FB2564211800D7B748 /* AuthViewController.swift in Sources */,
 				E9C9F1F22563DE7D00D7B748 /* AccountManagerViewController.swift in Sources */,
+				E9BC74B325654276008C6171 /* AuthPresenter.swift in Sources */,
+				E9DA80F3256FC81A004D9F89 /* AccountManagerRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
